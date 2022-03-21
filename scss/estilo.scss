@@ -1,0 +1,158 @@
+/*Tipo para Gonza on the beat*/
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+/*font-family: 'Rock Salt', italic;*/
+
+/*Tipo para toda la web*/
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Condensed&display=swap");
+/*font-family: 'Cabin Condensed', sans-serif;*/
+
+/**IMPORTS**/
+@import "variables";
+@import "boton";
+
+/**VARIABLES**/
+$colortipo: (h3: yellow);
+$colores: (color1: red, color2: yellow, color3: pink, color4: lightblue, color5: green);
+
+
+/**ESTILOS GENERALES**/
+body {
+    background-color: $colorfondo;
+  } 
+
+#titulo{
+    font-family: "Rock Salt";
+    color: $colorweb;
+}
+
+.menu { 
+    ul {
+        
+        li {
+    font-family: 'Cabin Condensed', sans-serif;
+    color: $colorweb;
+    text-transform: uppercase;
+    padding: 10px 20px 15px 20px;
+    max-width: 200px;
+    height: 50px;
+            }
+        }
+    }
+/**MAP GET**/
+.nav-item1 {
+    background-color: map-get($colores, color3);
+}
+
+.nav-item2 {
+    background-color: map-get($colores, color2);
+}
+
+.nav-item3 {
+    background-color: map-get($colores, color1);
+}
+
+.nav-item4 {
+    background-color: map-get($colores, color5);
+}
+
+.nav-item5 {
+    background-color: map-get($colores, color4);
+}
+
+
+/**-----------**/
+.gonzaportada {
+    img {
+    width: 100%;
+        }
+}
+
+.presentacion {
+    p{
+    display: flex;
+    font-family: "Cabin Condensed", sans-serif;
+    color: $colorweb;
+    margin-top: 30px;
+    font-style: bold;
+    text-align: center;
+  }
+}
+ 
+.columnas {
+width: auto;
+display: flex;
+align-items: center;
+justify-content: center;
+
+div {
+    .gonzabyn{
+        img {
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+            max-width: 250px;
+            height: auto;
+
+        }
+    }
+}
+
+.lista {
+    font-family: "Cabin Condensed", sans-serif;
+    color: $colorweb;
+    display: flex;
+    flex-direction: row-reverse;
+    ul li {
+        list-style: none;
+        text-align: left;
+        padding: 5px;
+        margin-top: 25px;
+        font-size: 60%;
+        text-decoration: none;
+    }
+}   
+}
+
+.container {
+    width: 50%;
+    height: 50%;
+    margin-top: 90px;
+    margin-bottom: 10px;
+  }
+  
+  .tituloYoutube {
+    font-family: "Cabin Condensed", sans-serif;
+    font-size: 20px;
+    text-decoration: underline;
+    color: $colorweb;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  
+/**MIXIN**/
+@mixin tamaño {
+    font-size: 80px;
+
+}
+
+.lista {
+    @include tamaño;
+}
+  
+  /**
+  #footer p {
+    color: $colorfooter;
+    font-size: small;
+    margin-top: 60px;
+    text-align: center;
+    margin-bottom: 10px;
+  } **/
+
+  /**EXTEND**/
+  #footer p{
+      @extend .tituloYoutube;
+  }

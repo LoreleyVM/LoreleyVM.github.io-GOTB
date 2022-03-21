@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACI,MADE,CAAC,GAAG,CACN,MAAM,CAAA;EACF,gBAAgB,EAAE,OAAe;CAIpC;;AANL,AAGQ,MAHF,CAAC,GAAG,CAGD,WAAK,CAAC;EACH,gBAAgB,EAAE,MAAM;CAC3B",
+    "sources": [
+        "../scss/boton.scss"
+    ],
+    "names": [],
+    "file": "boton.css"
+}

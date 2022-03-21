@@ -1,0 +1,10 @@
+header div{
+    ul{
+        .nav-item{
+            background-color: $colorboton;
+            &:hover {
+                background-color: purple !important;
+                    }
+            }
+        }
+}

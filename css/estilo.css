@@ -13,7 +13,6 @@ header div ul .nav-item:hover {
   background-color: purple !important;
 }
 
-/**VARIABLES**/
 /**ESTILOS GENERALES**/
 body {
   background-color: black;
@@ -33,28 +32,6 @@ body {
   height: 50px;
 }
 
-/**MAP GET**/
-.nav-item1 {
-  background-color: pink;
-}
-
-.nav-item2 {
-  background-color: yellow;
-}
-
-.nav-item3 {
-  background-color: red;
-}
-
-.nav-item4 {
-  background-color: green;
-}
-
-.nav-item5 {
-  background-color: lightblue;
-}
-
-/**-----------**/
 .gonzaportada img {
   width: 100%;
 }

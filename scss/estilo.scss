@@ -10,11 +10,6 @@
 @import "variables";
 @import "boton";
 
-/**VARIABLES**/
-$colortipo: (h3: yellow);
-$colores: (color1: red, color2: yellow, color3: pink, color4: lightblue, color5: green);
-
-
 /**ESTILOS GENERALES**/
 body {
     background-color: $colorfondo;
@@ -38,29 +33,7 @@ body {
             }
         }
     }
-/**MAP GET**/
-.nav-item1 {
-    background-color: map-get($colores, color3);
-}
-
-.nav-item2 {
-    background-color: map-get($colores, color2);
-}
-
-.nav-item3 {
-    background-color: map-get($colores, color1);
-}
-
-.nav-item4 {
-    background-color: map-get($colores, color5);
-}
-
-.nav-item5 {
-    background-color: map-get($colores, color4);
-}
-
-
-/**-----------**/
+    
 .gonzaportada {
     img {
     width: 100%;

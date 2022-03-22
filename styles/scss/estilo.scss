@@ -24,16 +24,27 @@ body {
     ul {
         
         li {
-    font-family: 'Cabin Condensed', sans-serif;
-    color: $colorweb;
-    text-transform: uppercase;
-    padding: 10px 20px 15px 20px;
-    max-width: 200px;
-    height: 50px;
-            }
+            font-family: 'Cabin Condensed', sans-serif;
+            color: $colorweb;
+            text-transform: uppercase;
+            padding: 10px 20px 15px 20px;
+            max-width: 200px;
+            height: 50px;
         }
     }
-    
+}
+
+.footer {
+          color: $colorfooter;
+          font-size: small;
+          margin-top: 60px;
+          text-align: center;
+          margin-bottom: 10px;
+        }
+
+
+/**INDEX**/
+
 .gonzaportada {
     img {
     width: 100%;
@@ -104,28 +115,50 @@ div {
     margin-bottom: 10px;
     text-align: center;
   }
-
   
-/**MIXIN**/
-@mixin tamaño {
-    font-size: 80px;
 
+/**CONTACT**/
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    background: rgb(59, 58, 58);
+    border-radius: 4px;
+    max-width: 700px;
+    margin: auto;
+    padding: 5px 35px;
+    padding-bottom: 30px;
 }
 
-.lista {
-    @include tamaño;
-}
-  
-  /**
-  #footer p {
-    color: $colorfooter;
-    font-size: small;
-    margin-top: 60px;
+.formheader .tituloContact {
+    font-weight: normal;
+    font-family: "Cabin Condensed", sans-serif;
+    color: whitesmoke;
     text-align: center;
-    margin-bottom: 10px;
-  } **/
-
-  /**EXTEND**/
-  #footer p{
-      @extend .tituloYoutube;
   }
+  
+  .form-label {
+    display: flex;
+    color: thistle;
+    font-size: 16px;
+    font-family: "Cabin Condensed", sans-serif;
+    text-align: left;
+  }
+
+  #Message {
+      height: 150px;
+      width: 600px;
+  }
+  
+  .form-check-label{
+    color: thistle;
+    font-family: "Cabin Condensed", sans-serif;
+  }
+
+  #btnform {
+    font-family: "Cabin Condensed";
+    font-size: 16px;
+    &:hover {
+            background-color: thistle;
+                }
+            }

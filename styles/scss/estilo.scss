@@ -43,7 +43,7 @@ body {
         }
 
 
-/**INDEX**/
+/**COMIENZA INDEX**/
 
 .gonzaportada {
     img {
@@ -116,16 +116,34 @@ div {
     text-align: center;
   }
   
+/**COMIENZA PRODUCTS**/
 
-/**CONTACT**/
+.contenedorbeats .titulobeats {
+      font-family: "Cabin Condensed", sans-serif;
+      color: whitesmoke;
+      font-weight: normal;
+      text-decoration: underline;
+      text-align: center;
+}
 
-.formulario {
+.contenedorkits .titulokits {
+  font-family: "Cabin Condensed", sans-serif;
+  color: whitesmoke;
+  font-weight: normal;
+  padding: 10px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+
+/**COMIENZA CONTACT**/
+
+main .formulario {
     display: flex;
     justify-content: center;
     background: rgb(59, 58, 58);
     border-radius: 4px;
     max-width: 700px;
-    margin: auto;
     padding: 5px 35px;
     padding-bottom: 30px;
 }

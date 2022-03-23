@@ -138,12 +138,13 @@ div {
 
 /**COMIENZA CONTACT**/
 
-main .formulario {
+.formulario {
     display: flex;
     justify-content: center;
     background: rgb(59, 58, 58);
     border-radius: 4px;
     max-width: 700px;
+    margin: auto;
     padding: 5px 35px;
     padding-bottom: 30px;
 }
@@ -177,6 +178,6 @@ main .formulario {
     font-family: "Cabin Condensed";
     font-size: 16px;
     &:hover {
-            background-color: thistle;
+            background-color: rgb(216, 191, 216);
                 }
             }

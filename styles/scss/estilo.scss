@@ -13,6 +13,7 @@
 /**ESTILOS GENERALES**/
 body {
     background-color: $colorfondo;
+    box-sizing: border-box;
   } 
 
 #titulo{
@@ -231,20 +232,22 @@ div {
   background-color: rgb(226, 48, 152);
   margin: 100px;
   padding: 100px;
-  justify-content: center;
   align-items: center;
+    a {
+      padding-left: 80px;
+  }
 }
 
 #Socialmedia {
   img {
     display: inline-block;
-height: 100%;
-width: 100%;
-border-radius: 7px;
-cursor: pointer;
-text-align: center;
-&hover: {
-  transform: translateY(-5px) scale(2);
-}
-  }
+    height: 100%;
+    width: 100%;
+    border-radius: 7px;
+    cursor: pointer;
+    text-align: center;
+      &:hover {
+        transform: translateY(-5px) scale(2);
+      }
+    }
 }

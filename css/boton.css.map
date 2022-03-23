@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAGY,MAHN,CAAC,GAAG,CACN,EAAE,CACE,SAAS,AACJ,MAAM,CAAC;EACJ,gBAAgB,EAAE,MAAM;CACnB",
-    "sources": [
-        "../styles/scss/boton.scss"
-    ],
-    "names": [],
-    "file": "boton.css"
-}

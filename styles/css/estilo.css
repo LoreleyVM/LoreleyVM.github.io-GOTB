@@ -135,6 +135,13 @@ body {
   text-align: center;
 }
 
+/**COMIENZA LICENSING INFO**/
+.tarjetaslicensing {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 /**COMIENZA CONTACT**/
 .formulario {
   display: -webkit-box;
@@ -185,5 +192,42 @@ body {
 
 #btnform:hover {
   background-color: thistle;
+}
+
+/**COMIENZA FAQ**/
+.titulofaq h2, .titulofaq h4 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: normal;
+  font-family: "Cabin Condensed", sans-serif;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.titulofaq h2 {
+  text-decoration: underline;
+}
+
+.tarjetapreguntas {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cardheader {
+  text-align: center;
+}
+
+.aditionalquestion {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: normal;
+  font-family: "Cabin Condensed", sans-serif;
+  color: whitesmoke;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
 }
 /*# sourceMappingURL=estilo.css.map */

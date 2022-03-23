@@ -135,6 +135,11 @@ div {
   text-align: center;
 }
 
+/**COMIENZA LICENSING INFO**/
+.tarjetaslicensing {
+  justify-content: center;
+}
+
 
 /**COMIENZA CONTACT**/
 
@@ -181,3 +186,40 @@ div {
             background-color: rgb(216, 191, 216);
                 }
             }
+
+
+/**COMIENZA FAQ**/
+
+.titulofaq {
+  h2,h4{
+    justify-content: center;
+    font-weight: normal;
+    font-family: "Cabin Condensed", sans-serif;
+    color: whitesmoke;
+    text-align: center;
+  }
+}
+
+.titulofaq {
+  h2{
+    text-decoration: underline;
+  }
+}
+
+.tarjetapreguntas {
+  justify-content: center;
+}
+
+.cardheader {
+  text-align: center;
+}
+
+.aditionalquestion{
+    justify-content: center;
+    font-weight: normal;
+    font-family: "Cabin Condensed", sans-serif;
+    color: whitesmoke;
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+}

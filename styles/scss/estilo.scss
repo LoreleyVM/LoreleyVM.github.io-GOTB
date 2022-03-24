@@ -41,6 +41,8 @@ body {
           margin-top: 60px;
           text-align: center;
           margin-bottom: 10px;
+          margin-right: 10px;
+          margin-left: 10px;
         }
 
 
@@ -117,6 +119,7 @@ div {
     text-align: center;
   }
   
+
 /**COMIENZA PRODUCTS**/
 
 .contenedorbeats .titulobeats {
@@ -139,6 +142,71 @@ div {
 /**COMIENZA LICENSING INFO**/
 .tarjetaslicensing {
   justify-content: center;
+}
+
+
+/**COMIENZA FAQ**/
+
+.titulofaq {
+  h2,h4{
+    justify-content: center;
+    font-weight: normal;
+    font-family: "Cabin Condensed", sans-serif;
+    color: whitesmoke;
+    text-align: center;
+  }
+}
+
+.titulofaq {
+  h2{
+    text-decoration: underline;
+  }
+}
+
+.tarjetapreguntas {
+  justify-content: center;
+}
+
+.cardheader {
+  text-align: center;
+}
+
+.aditionalquestion{
+    justify-content: center;
+    font-weight: normal;
+    font-family: "Cabin Condensed", sans-serif;
+    color: whitesmoke;
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+}
+
+
+/**COMIENZA FIND ME**/
+
+.socialmedia-btn {
+  display: flex;
+  background-color: rgb(226, 48, 152);
+  margin: 100px;
+  padding: 100px;
+  align-items: center;
+    a {
+      padding-left: 80px;
+  }
+}
+
+#Socialmedia {
+  img {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 7px;
+    cursor: pointer;
+    text-align: center;
+      &:hover {
+        transform: translateY(-5px) scale(2);
+      }
+    }
 }
 
 
@@ -187,67 +255,3 @@ div {
             background-color: rgb(216, 191, 216);
                 }
             }
-
-
-/**COMIENZA FAQ**/
-
-.titulofaq {
-  h2,h4{
-    justify-content: center;
-    font-weight: normal;
-    font-family: "Cabin Condensed", sans-serif;
-    color: whitesmoke;
-    text-align: center;
-  }
-}
-
-.titulofaq {
-  h2{
-    text-decoration: underline;
-  }
-}
-
-.tarjetapreguntas {
-  justify-content: center;
-}
-
-.cardheader {
-  text-align: center;
-}
-
-.aditionalquestion{
-    justify-content: center;
-    font-weight: normal;
-    font-family: "Cabin Condensed", sans-serif;
-    color: whitesmoke;
-    text-align: center;
-    font-style: italic;
-    font-size: smaller;
-}
-
-/**COMIENZA FIND ME**/
-
-.socialmedia-btn {
-  display: flex;
-  background-color: rgb(226, 48, 152);
-  margin: 100px;
-  padding: 100px;
-  align-items: center;
-    a {
-      padding-left: 80px;
-  }
-}
-
-#Socialmedia {
-  img {
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: 7px;
-    cursor: pointer;
-    text-align: center;
-      &:hover {
-        transform: translateY(-5px) scale(2);
-      }
-    }
-}

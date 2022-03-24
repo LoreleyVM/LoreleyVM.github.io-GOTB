@@ -142,6 +142,7 @@ div {
 /**COMIENZA LICENSING INFO**/
 .tarjetaslicensing {
   justify-content: center;
+  width:100%
 }
 
 
@@ -164,8 +165,21 @@ div {
 }
 
 .tarjetapreguntas {
+  display: flex;
   justify-content: center;
+  width: 100%;
+  justify-content: space-around;
+  text-align: center;
+    .card {
+    background-color: transparent;
+    font-weight: normal;
+      font-family: "Cabin Condensed", sans-serif;
+      color: whitesmoke;
+  }
 }
+
+
+
 
 .cardheader {
   text-align: center;

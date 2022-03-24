@@ -36,6 +36,8 @@ body {
   margin-top: 60px;
   text-align: center;
   margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 /**COMIENZA INDEX**/
@@ -142,6 +144,89 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
+}
+
+/**COMIENZA FAQ**/
+.titulofaq h2, .titulofaq h4 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: normal;
+  font-family: "Cabin Condensed", sans-serif;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.titulofaq h2 {
+  text-decoration: underline;
+}
+
+.tarjetapreguntas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+}
+
+.tarjetapreguntas .card {
+  background-color: transparent;
+  font-weight: normal;
+  font-family: "Cabin Condensed", sans-serif;
+  color: whitesmoke;
+}
+
+.cardheader {
+  text-align: center;
+}
+
+.aditionalquestion {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: normal;
+  font-family: "Cabin Condensed", sans-serif;
+  color: whitesmoke;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+}
+
+/**COMIENZA FIND ME**/
+.socialmedia-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #e23098;
+  margin: 100px;
+  padding: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.socialmedia-btn a {
+  padding-left: 80px;
+}
+
+#Socialmedia img {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 7px;
+  cursor: pointer;
+  text-align: center;
+}
+
+#Socialmedia img:hover {
+  -webkit-transform: translateY(-5px) scale(2);
+          transform: translateY(-5px) scale(2);
 }
 
 /**COMIENZA CONTACT**/
@@ -194,73 +279,5 @@ body {
 
 #btnform:hover {
   background-color: thistle;
-}
-
-/**COMIENZA FAQ**/
-.titulofaq h2, .titulofaq h4 {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-weight: normal;
-  font-family: "Cabin Condensed", sans-serif;
-  color: whitesmoke;
-  text-align: center;
-}
-
-.titulofaq h2 {
-  text-decoration: underline;
-}
-
-.tarjetapreguntas {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.cardheader {
-  text-align: center;
-}
-
-.aditionalquestion {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-weight: normal;
-  font-family: "Cabin Condensed", sans-serif;
-  color: whitesmoke;
-  text-align: center;
-  font-style: italic;
-  font-size: smaller;
-}
-
-/**COMIENZA FIND ME**/
-.socialmedia-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #e23098;
-  margin: 100px;
-  padding: 100px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.socialmedia-btn a {
-  padding-left: 80px;
-}
-
-#Socialmedia img {
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  border-radius: 7px;
-  cursor: pointer;
-  text-align: center;
-}
-
-#Socialmedia img:hover {
-  -webkit-transform: translateY(-5px) scale(2);
-          transform: translateY(-5px) scale(2);
 }
 /*# sourceMappingURL=estilo.css.map */

@@ -82,7 +82,7 @@ body {
   height: auto;
 }
 
-.columnas .lista {
+.columnas div section .lista {
   font-family: "Cabin Condensed", sans-serif;
   color: whitesmoke;
   display: -webkit-box;
@@ -94,7 +94,7 @@ body {
           flex-direction: row-reverse;
 }
 
-.columnas .lista ul li {
+.columnas div section .lista ul li {
   list-style: none;
   text-align: left;
   padding: 5px;
@@ -279,5 +279,55 @@ body {
 
 #btnform:hover {
   background-color: thistle;
+}
+
+/**MOBILE**/
+@media screen and (max-width: 575px) {
+  /**ESTILOS GENERALES**/
+  #titulo {
+    max-width: 10px;
+    padding: 2px;
+    margin: 2px;
+  }
+  .footer {
+    font-size: xx-small;
+  }
+  /**COMIENZA INDEX**/
+  .presentacion p {
+    font-size: 6px;
+  }
+  .columnas div .gonzabyn img {
+    max-width: 150px;
+  }
+  .lista ul li {
+    font-size: 50%;
+  }
+  .container {
+    width: 95%;
+    height: 95%;
+    margin-top: 60px;
+    margin-bottom: 10px;
+  }
+  /**COMIENZA PRODUCTS**/
+  /**COMIENZA LICENSING INFO**/
+  /**COMIENZA FAQ**/
+  .tarjetapreguntas {
+    width: 90%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    text-align: center;
+    margin: auto;
+  }
+  /**COMIENZA FIND ME**/
+  /**COMIENZA CONTACT**/
+  .formulario {
+    max-width: 400px;
+    margin-left: 20px;
+    padding: 2px 5px;
+    padding-bottom: 8px;
+  }
+  .formulario input, .formulario textarea {
+    max-width: 250px;
+  }
 }
 /*# sourceMappingURL=estilo.css.map */

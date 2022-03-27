@@ -564,3 +564,38 @@ body {
   }
 }
 /*# sourceMappingURL=estilo.css.map */
+
+@media screen and (max-width:764px) {
+  .box_padrenav{
+    display:flex;
+    flex-direction: row;
+  
+  }
+  .logo_nav{
+      margin: 0px !important; 
+      font-size: 1rem !important;
+      max-width: 85%!important;
+      width: 85% !important;
+  }
+  .box_padrenav button{
+    margin:0px !important;
+  }
+}
+
+@media screen and (max-width:425px) {
+  .box_padrenav{
+    display:flex;
+    flex-direction: row;
+  
+  }
+  .logo_nav{
+      margin: 0px !important; 
+      font-size: 1rem !important;
+      max-width: 80%!important;
+      width: 80% !important;
+      padding-left: 15px;
+  }
+  .box_padrenav button{
+    margin:0px !important;
+  }
+}

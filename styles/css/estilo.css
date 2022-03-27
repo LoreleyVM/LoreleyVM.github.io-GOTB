@@ -5,6 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin+Condensed&display=swap");
 /*font-family: 'Cabin Condensed', sans-serif;*/
 /**IMPORTS**/
+/**$colortexto: whitesmoke; $colorfooter: thistle;**/
 header div ul .nav-item:hover {
   background-color: purple;
 }
@@ -273,7 +274,7 @@ body {
 }
 
 #btnform {
-  font-family: "Cabin Condensed";
+  font-family: "Cabin Condensed", sans-serif;
   font-size: 16px;
 }
 

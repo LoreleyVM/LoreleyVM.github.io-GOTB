@@ -10,22 +10,28 @@
 @import "variables";
 @import "boton";
 
+/**MIXIN**/
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+}
+
 /**ESTILOS GENERALES**/
   body {
-    background-color: $colorfondo;
+    background-color: map-get($colores, primercolor);
     box-sizing: border-box;
   } 
 
   #titulo{
-    font-family: "Rock Salt";
-    color: $colorweb;
+    font-family: $tipografiatitulo;
+    color: map-get($colores, segundocolor);
   }
 
   .menu { 
     ul {
       li {
-          font-family: 'Cabin Condensed', sans-serif;
-          color: $colorweb;
+          font-family: $tipografiaweb;
+          color: map-get($colores, segundocolor);
           text-transform: uppercase;
           padding: 10px 20px 15px 20px;
           max-width: 200px;
@@ -35,7 +41,7 @@
   }
 
   .footer {
-    color: $colorfooter;
+    color: map-get($colores, tercercolor);
     font-size: small;
     margin-top: 60px;
     text-align: center;
@@ -56,8 +62,8 @@
   .presentacion {
     p{
       display: flex;
-      font-family: "Cabin Condensed", sans-serif;
-      color: $colorweb;
+      font-family: $tipografiaweb;
+      color: map-get($colores, segundocolor);
       margin-top: 30px;
       font-style: bold;
       text-align: center;
@@ -65,10 +71,9 @@
   }
  
   .columnas {
+    @include flex-center;
     width: auto;
-    display: flex;
     align-items: center;
-    justify-content: center;
       div {
         .gonzabyn{
           img {
@@ -84,8 +89,8 @@
       div{
         section {
           .lista {
-            font-family: "Cabin Condensed", sans-serif;
-            color: $colorweb;
+            font-family: $tipografiaweb;
+            color: map-get($colores, segundocolor);
             display: flex;
             flex-direction: row-reverse;
               ul li {
@@ -109,10 +114,10 @@
   }
   
   .tituloYoutube {
-    font-family: "Cabin Condensed", sans-serif;
+    font-family: $tipografiaweb;
     font-size: 20px;
     text-decoration: underline;
-    color: $colorweb;
+    color: map-get($colores, segundocolor);
     font-weight: normal;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -123,20 +128,16 @@
 /**COMIENZA PRODUCTS**/
 
   .contenedorbeats .titulobeats {
-    font-family: "Cabin Condensed", sans-serif;
-    color: whitesmoke;
+    font-family: $tipografiaweb;
+    color: map-get($colores, segundocolor);
     font-weight: normal;
     text-decoration: underline;
     text-align: center;
   }
 
   .contenedorkits .titulokits {
-    font-family: "Cabin Condensed", sans-serif;
-    color: whitesmoke;
-    font-weight: normal;
+    @extend .titulobeats;
     padding: 10px;
-    text-decoration: underline;
-    text-align: center;
   }
 
 
@@ -154,8 +155,8 @@
     h2,h4{
       justify-content: center;
       font-weight: normal;
-      font-family: "Cabin Condensed", sans-serif;
-      color: whitesmoke;
+      font-family: $tipografiaweb;
+      color: map-get($colores, segundocolor);
       text-align: center;
     }
   }
@@ -168,15 +169,14 @@
 
   .tarjetapreguntas {
     display: flex;
-    justify-content: center;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
     text-align: center;
       .card {
         background-color: transparent;
         font-weight: normal;
-        font-family: "Cabin Condensed", sans-serif;
-        color: whitesmoke;
+        font-family: $tipografiaweb;
+        color: map-get($colores, segundocolor);
       }
   }
 
@@ -185,13 +185,10 @@
   }
 
   .aditionalquestion {
-    justify-content: center;
-    font-weight: normal;
-    font-family: "Cabin Condensed", sans-serif;
-    color: whitesmoke;
-    text-align: center;
+    @extend .titulofaq;
     font-style: italic;
     font-size: smaller;
+    text-decoration: none;
   }
 
 
@@ -199,7 +196,7 @@
 
   .socialmedia-btn {
     display: flex;
-    background-color: rgb(226, 48, 152);
+    background-color: map-get($colores, cuartocolor);
     margin: 100px;
     padding: 100px;
     align-items: center;
@@ -225,9 +222,8 @@
 /**COMIENZA CONTACT**/
 
   .formulario {
-    display: flex;
-    justify-content: center;
-    background: rgb(59, 58, 58);
+    @include flex-center;
+    background: map-get($colores, quintocolor);
     border-radius: 4px;
     max-width: 700px;
     margin: auto;
@@ -237,16 +233,16 @@
 
   .formheader .tituloContact {
     font-weight: normal;
-    font-family: "Cabin Condensed", sans-serif;
-    color: whitesmoke;
+    font-family: $tipografiaweb;
+    color: map-get($colores, segundocolor);
     text-align: center;
   }
   
   .form-label {
     display: flex;
-    color: thistle;
+    color: map-get($colores, tercercolor);
     font-size: 16px;
-    font-family: "Cabin Condensed", sans-serif;
+    font-family: $tipografiaweb;
     text-align: left;
   }
 
@@ -256,15 +252,15 @@
   }
   
   .form-check-label{
-    color: thistle;
-    font-family: "Cabin Condensed", sans-serif;
+    color: map-get($colores, tercercolor);
+    font-family: $tipografiaweb;
   }
 
   #btnform {
-    font-family: "Cabin Condensed";
+    font-family: $tipografiaweb;
     font-size: 16px;
       &:hover {
-        background-color: rgb(216, 191, 216);
+        background-color: map-get($colores, tercercolor);
       }
   }
 
@@ -360,7 +356,7 @@
   .socialmedia-btn {
     display: flex;
     flex-direction: column !important;
-    background-color: rgb(226, 48, 152);
+    background-color: map-get($colores, cuartocolor);
     margin: 70px;
     padding: 70px;
     align-items: center;
@@ -466,7 +462,7 @@
   .socialmedia-btn {
     display: flex;
     flex-direction: column !important;
-    background-color: rgb(226, 48, 152);
+    background-color: map-get($colores, cuartocolor);
     margin: 10%;
     padding: 10%;
     align-items: center;  
@@ -476,8 +472,7 @@
   }  
 
   #Socialmedia {
-    justify-content: center;
-    display: flex;
+    @include flex-center;
       img {
         height: 50%;
         width: 50%;
@@ -543,8 +538,7 @@
   /**COMIENZA LICENSING INFO**/
 
   .tarjetaslicensing {
-    display: flex;
-    justify-content: center;
+    @include flex-center;
     width: 100%;
     margin: auto;
   }
@@ -565,7 +559,7 @@
   .socialmedia-btn {
     display: flex;
     flex-direction: column !important;
-    background-color: rgb(226, 48, 152);
+    background-color: map-get($colores, cuartocolor);
     margin: 10%;
     padding: 10%;
     align-items: center;  
@@ -575,8 +569,7 @@
   }  
 
   #Socialmedia {
-    justify-content: center;
-    display: flex;
+    @include flex-center;
       img {
         height: 50%;
         width: 50%;

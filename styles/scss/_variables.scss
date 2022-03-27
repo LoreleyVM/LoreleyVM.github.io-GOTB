@@ -1,3 +1,11 @@
-$colorweb: whitesmoke;
-$colorfondo: black;
-$colorfooter: thistle;
+$colores: (
+    primercolor: black, 
+    segundocolor: whitesmoke, 
+    tercercolor: thistle, 
+    cuartocolor: rgb(226, 48, 152)
+    quintocolor: rgb(59, 58, 58)
+    );
+
+$tipografiatitulo: "Rock Salt";
+
+$tipografiaweb: 'Cabin Condensed', sans-serif;

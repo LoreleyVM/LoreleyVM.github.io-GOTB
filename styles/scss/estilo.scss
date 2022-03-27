@@ -269,27 +269,29 @@
   }
 
 
-/**MOBILE**/
+  /**********************MEDIA**********************/
 
-@media screen and (max-width:575px) {
+@media screen and (max-width:420px) {
 
   /**ESTILOS GENERALES**/
     #titulo {
-      max-width: 10px;
+      
       padding: 2px;
       margin: 2px;
     }
 
     .fs-1 {
-      font-size: 17px !important;
+      font-size: 22px !important;
     }
 
     button {
-      margin-left: 200px;
+      margin-right: 80%;
+      margin-top: 10px;
     }
     
     .menu {
       font-size: 12px;
+
     }
   
     .footer {
@@ -332,6 +334,20 @@
 
   /**COMIENZA LICENSING INFO**/
 
+  .tarjetaslicensing {
+    display: inline;
+    justify-content: center;
+    width:50%
+  }
+
+  .card-img-top {
+    width: 100%;
+  }
+
+  .card-text {
+    font-size: x-small;
+  }
+
   /**COMIENZA FAQ**/
     .tarjetapreguntas {
       width: 90%;
@@ -341,15 +357,239 @@
     }
 
   /**COMIENZA FIND ME**/
-  
+  .socialmedia-btn {
+    display: flex;
+    flex-direction: column !important;
+    background-color: rgb(226, 48, 152);
+    margin: 70px;
+    padding: 70px;
+    align-items: center;
+      a {
+        padding: 10px;
+      }
+  }  
+
   /**COMIENZA CONTACT**/
     .formulario {
-      max-width: 400px;
+      width: 300px;
       margin: auto;
-      padding: 2px 5px;
-      padding-bottom: 8px;
         input,textarea {
           max-width: 250px;
+        }
+    }
+}
+
+@media screen and (min-width: 421px) and (max-width: 768px){
+
+  /**ESTILOS GENERALES**/
+
+  #titulo {
+    max-width: fit-content;
+    margin-bottom: 2px;
+  }
+
+  .fs-1 {
+    font-size:30px !important;
+  }
+
+  button {
+    margin-left: 85%;
+  }
+
+  .menu {
+    ul {
+      li {
+          font-size: 14px;
+      }
+    }
+  }
+
+  .footer {
+    font-size: x-small;
+  }
+
+  /**COMIENZA INDEX**/
+  .presentacion {
+    p{
+      font-size: 6px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  .columnas {
+    div {
+      .gonzabyn{
+        img {
+          max-width: 210px;
+        }
+      }
+    }
+  }
+
+  .lista {
+    ul li {
+      font-size: 50%;
+    }
+  }   
+
+  .container {
+    width: 95%;
+    height: 95%;
+    margin-top: 60px;
+    margin-bottom: 10px;
+  }
+
+  /**COMIENZA PRODUCTS**/
+
+  /**COMIENZA LICENSING INFO**/
+
+  .tarjetaslicensing {
+    display: inline;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .card-text {
+    font-size: medium;
+  }
+
+  /**COMIENZA FAQ**/
+    .tarjetapreguntas {
+      width: 90%;
+      justify-content: space-around;
+      text-align: center;
+      margin: auto;
+    }
+
+  /**COMIENZA FIND ME**/
+  .socialmedia-btn {
+    display: flex;
+    flex-direction: column !important;
+    background-color: rgb(226, 48, 152);
+    margin: 10%;
+    padding: 10%;
+    align-items: center;  
+      a {
+        padding: 10px;
+      }
+  }  
+
+  #Socialmedia {
+    justify-content: center;
+    display: flex;
+      img {
+        height: 50%;
+        width: 50%;
+        border-radius: 7px;
+      }
+  }
+
+  /**COMIENZA CONTACT**/
+    .formulario {
+      width: 550px;
+      margin: auto;
+        input,textarea {
+          max-width: 500px;
+        }
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /**ESTILOS GENERALES**/
+
+  #titulo {
+  max-width: fit-content;
+  margin-bottom: 2px;
+  }
+
+  .fs-1 {
+  font-size:30px !important;
+  }
+
+  .menu { 
+    ul {
+      li {
+        padding: 15px 6px 5px 6px;
+        max-width: 200px;
+        height: 50px;
+        font-size: 12px;
+      }
+    }
+  }
+
+
+  /**COMIENZA INDEX**/
+
+  .columnas {
+    div {
+      .gonzabyn{
+        img {
+          max-width: 225px;
+        }
+      }
+    }
+  }
+
+  .container {
+    width: 85%;
+    height: 85%;
+    margin-top: 60px;
+    margin-bottom: 10px;
+  }
+
+  /**COMIENZA PRODUCTS**/
+
+  /**COMIENZA LICENSING INFO**/
+
+  .tarjetaslicensing {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+  }
+
+  .card-text {
+    font-size: small;
+  }
+
+  /**COMIENZA FAQ**/
+    .tarjetapreguntas {
+      width: 90%;
+      justify-content: space-around;
+      text-align: center;
+      margin: auto;
+    }
+
+  /**COMIENZA FIND ME**/
+  .socialmedia-btn {
+    display: flex;
+    flex-direction: column !important;
+    background-color: rgb(226, 48, 152);
+    margin: 10%;
+    padding: 10%;
+    align-items: center;  
+      a {
+        padding: 10px;
+      }
+  }  
+
+  #Socialmedia {
+    justify-content: center;
+    display: flex;
+      img {
+        height: 50%;
+        width: 50%;
+        border-radius: 7px;
+      }
+  }
+
+  /**COMIENZA CONTACT**/
+    .formulario {
+      width: 700px;
+      margin: auto;
+        input,textarea {
+          max-width: 650px;
         }
     }
 }
